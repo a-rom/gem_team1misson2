@@ -15,4 +15,9 @@ class GemTeam1misson2Test < Minitest::Test
    assert_equal "good", @main.message(180,50)
    assert_equal "bad", @main.message(175,70)
   end
+
+  def test_bmi?()
+   assert_equal 8.0 , @main.bmi?(50,2)
+  end
 end
+
