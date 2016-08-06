@@ -8,14 +8,15 @@ end
 def message(height, weight)
   t = bmi?(height, weight)
    if t < 20 
-     puts "good" 
+     return "good" 
    else
-     puts "bad"
+     return "bad"
    end
 end   
 
 height = ARGV[0].to_i 
 weight = ARGV[1].to_i 
 
-message(height, weight)
+main = Main.new
+main.message(height, weight)
 end
