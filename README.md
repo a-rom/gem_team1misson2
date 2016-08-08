@@ -1,4 +1,4 @@
-https://travis-ci.org/a-rom/gem_team1misson2.svg?branch=master
+[![Build Status](https://travis-ci.org/a-rom/gem_team1misson2.svg?branch=master)](https://travis-ci.org/a-rom/gem_team1misson2)
 
 # GemTeam1misson2
 
