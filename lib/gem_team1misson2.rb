@@ -6,17 +6,43 @@ def bmi?(height, weight)
   return s
 end
 
-def message(height, weight)
+def sex(x)
+
+  if x == 1 then
+	y = 20
+	return y
+
+  elsif x == 2 then
+	y = 22
+	return y
+  else
+  	y = 0
+	return y
+  end
+end
+
+def message(height, weight, y)
   t = bmi?(height, weight)
-   if t < 20 
-   　puts "good" 
+   if y==0 then
+	puts "maybe sex-input error"
+
+   elsif t<=y then
+	puts "good" 
+   elsif t>y then
+	puts "bad"
    else
-     puts "bad"
+	puts "error"
+  
    end
 end   
 
-height = ARGV[0].to_i 
-weight = ARGV[1].to_i 
+puts("height?")
+height = gets.to_i
+puts("weight?") 
+weight = gets.to_i
+puts("puts Male:1 Female:2")
+x = gets.to_i
+y = sex(x)
 
-message(height, weight)
-
+message(height, weight, y)
+end
